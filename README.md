@@ -35,7 +35,33 @@ Users can create new accounts and log in via email and password. Once logged in,
 
 ## Project Structure
 
-
+|--/controller
+|-admin.js
+|-customer.js
+|-login.js
+|-logout.js
+|-signup.js
+|
+|--/css
+|-admin.css
+|-customer.css
+|-login.css
+|-signup.css
+|
+|--/images
+|
+|--/models
+|-bookModel.js
+|-config.js
+|-userModel.js
+|
+|--/views
+|---/admin
+|---/customer
+|---/partials
+|--login.ejs
+|--signup.ejs
+|----app.js
 ## System Requirements
 
 - XAMPP server
@@ -51,7 +77,7 @@ Users can create new accounts and log in via email and password. Once logged in,
  
  "library_management_system".
 
-3. Run "library_management_system.sql".
+3. Run "library_management_system.sql"  codes  on XAMPP SQL section.
 
 ### Step 2:
 
