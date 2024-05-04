@@ -65,17 +65,17 @@ stucture:
 1way:
 *make a New folder
 *open terminal of it and type this.
->>>>git clone https://github.com/Souvik09022002/Node_library.git
->>>>npm i
->>>>npm start
+1)git clone https://github.com/Souvik09022002/Node_library.git
+2)npm i
+3)npm start
 
 
 2nd way:
 download zip and extract it 
 and than flow this steps
->>>>>   npm init -y,
->>>>>   npm install
->>>>>   npm start
+    a.   npm init -y,
+    b.  npm install
+    c.  npm start
 
 # 3rd step:
     create a account
