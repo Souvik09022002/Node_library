@@ -78,6 +78,6 @@ and than flow this steps
     c.  npm start
 
 # 3rd step:
-    create a account
-    singup
+    1)create a account
+    2)singup
 
