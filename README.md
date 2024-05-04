@@ -65,9 +65,9 @@ stucture:
 1way:
 *make a New folder
 *open terminal of it and type this.
-1)git clone https://github.com/Souvik09022002/Node_library.git
-2)npm i
-3)npm start
+      1)git clone https://github.com/Souvik09022002/Node_library.git
+      2)npm i
+      3)npm start
 
 
 2nd way:
