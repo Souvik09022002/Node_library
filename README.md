@@ -47,7 +47,9 @@ Users can create new accounts and log in via email and password. Once logged in,
 ### Step 1:
 
 1. Open XAMPP server.
-2. Create a database named "library_management_system".
+2. Create a database named "
+```sh 
+ library_management_system".
 3. Run "library_management_system.sql".
 
 ### Step 2:
