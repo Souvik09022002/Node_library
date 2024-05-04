@@ -67,7 +67,15 @@ Users can create new accounts and log in via email and password. Once logged in,
 - XAMPP server
 - Node.js
 - Visual Studio Code
-
+## dependecy
+    "async-validator-2": "^1.0.0",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "mysql": "^2.15.0",
+    "nodemon": "^1.19.4"
 ## Installation Steps
 
 ### Step 1: Setting Up the Database
