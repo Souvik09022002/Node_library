@@ -1,83 +1,69 @@
-﻿# Library-Management-System-Nodejs & mysql
-here i create a projet that can handel the librarian day to day task very easyly .here have two part on this project one is the 
-admin part: here the admin person first login use his user email and password and than its take on the dashboard page where he show alaround his management status and customer details.
-       * show all details in dashboard
-       * check its own profile
-       * update his profile
-       *change password
-       *show all customer details
-       *add customer & delete customer
-       *edit customer details
-       *show all book records in a list format
-       *here he can add new book
-       *check issed books
-       *accept the requested of the user
-       *view the requested books
-user part:
-       *user create new account
-       *login via email & password
-       *show this dashboard
-       *show is Total books borrowed
-       *show his profile
-       *edit & change password of own details
-       *show his recive books list down
-       *request any book with there details
-       *shoe book history and borrowd book.
+# Library Management System - Node.js & MySQL
 
-stucture:
-       |--/controller
-            |-admin.js
-            |-customer.js
-            |-login.js
-            |-logout.js
-            |-singup.js
-       |
-       |--/css
-            |-admin.css
-            |-customer.css
-            |-login.css
-            |-singup.css
-       |
-       |--/iages
-       |
-       |--/models
-            |-bookModel.js
-            |-config.js
-            |-userModel.js
-       |
-       |--/views
-            |---/admin
-            |---/customer
-            |---/partials
-            |--login.ejs
-            |--singup.ejs
-       |----app.js
-       
-*system requrements:
-1)XAMPP server
-2)nodejs
-3)vs code
+## Introduction
 
-# 1st step:
-   open XAMPP server  & run my (libray_management_system.sql);
-   
-# 2nd step:
-1way:
-*make a New folder
-*open terminal of it and type this.
-      1)git clone https://github.com/Souvik09022002/Node_library.git
-      2)npm i
-      3)npm start
+This project aims to streamline day-to-day tasks for librarians by providing a user-friendly interface. The system consists of two main parts:
+
+### Admin Part
+
+Admins can log in using their email and password, accessing a dashboard displaying management statuses and customer details. Key functionalities include:
+
+- View dashboard details
+- Check own profile
+- Update profile information
+- Change password
+- View all customer details
+- Add and delete customers
+- Edit customer details
+- View book records
+- Add new books
+- Check issued books
+- Accept user book requests
+- View requested books
+
+### User Part
+
+Users can create new accounts and log in via email and password. Once logged in, they can:
+
+- Access dashboard
+- View total books borrowed
+- View profile
+- Edit and change own password
+- View received books list
+- Request books with details
+- View book history and borrowed books
+
+## Project Structure
 
 
-2nd way:
-download zip and extract it 
-and than flow this steps
-    a.   npm init -y,
-    b.  npm install
-    c.  npm start
+## System Requirements
 
-# 3rd step:
-    1)create a account
-    2)singup
+- XAMPP server
+- Node.js
+- Visual Studio Code
 
+## Installation Steps
+
+### Step 1:
+
+1. Open XAMPP server.
+2. Create a database named "library_management_system".
+3. Run "library_management_system.sql".
+
+### Step 2:
+
+#### Option 1:
+
+1. Create a new folder.
+2. Open terminal in the folder and execute:
+   ```sh
+   git clone https://github.com/Souvik09022002/Node_library.git
+   npm install
+   npm start
+#### Option 2:
+ 1.Download the zip file and extract it.
+ 2.Execute the following commands in the terminal:
+ ```sh
+ npm init -y
+ npm install
+ npm start
