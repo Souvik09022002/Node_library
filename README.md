@@ -52,11 +52,26 @@ stucture:
             |--login.ejs
             |--singup.ejs
        |----app.js
-      
+       
+*system requrements:
+1)XAMPP server
+2)nodejs
+3)vs code
 
 # 1st step:
    open XAMPP server  & run my (libray_management_system.sql);
+   
 # 2nd step:
+1way:
+*make a folder
+*open terminal of it and type this.
+>>>>git clone https://github.com/Souvik09022002/Node_library.git
+>>>>cd <folder name>
+>>>>npm start
+
+2nd way:
+download zip and extract it 
+and than flow this steps
 >>>>>   npm init -y
 >>>>>   npm install
 >>>>>   npm install async-validator-2 body-parser ejs express express-session morgan mysql nodemon
