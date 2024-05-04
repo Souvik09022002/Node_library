@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <!-- Include the header partial -->
+    <%-include('../partials/header.html')%>
+    <!-- Link to admin CSS stylesheet -->
+    <link rel="stylesheet" href="/../../css/admin.css">
+</head>
+
+<body>
+
+    <!-- Include the navbar partial -->
+    <%-include('partials/navbar.html')%>
+
+    <!-- Container for the main content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Include the sidebar partial -->
+            <%-include('partials/sidebar.html')%>
+
+            <!-- Main content area -->
+            <div class="col-md-10 content">
+                <!-- Header with title and background color -->
+                <h1 class="display-4 border border-info bg-primary text-white p-3 rounded">Quick Inventory | Admin</h1>
+
+                <!-- Alerts for displaying statistics -->
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <div class="alert alert-info" role="alert">
+                            <!-- Total number of books -->
+                            Total Books: <span class="float-right"><%=bk%></span>
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            <!-- Total number of members -->
+                            Total Members: <span class="float-right"><%=usr%></span>
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            <!-- Total number of books borrowed -->
+                            Total books borrowed: <span class="float-right"><%=brwd%></span>
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            <!-- Total number of books borrowed in the last 30 days -->
+                            Total borrowed books in last 30 days: <span class="float-right"><%=mb%></span>
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            <!-- Most borrowed book in the last 30 days -->
+                            Most borrowed book in last 30 days: <span class="float-right"><%=mbb.title%> by <%=mbb.author%> | Total: <%=mbb.magnitude%> times</span>
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                            <!-- Most requested book -->
+                            Most requested book: <span class="float-right"><%=mrb.title%> by <%=mrb.author%> | Total: <%=mrb.magnitude%> times</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the footer partial -->
+    <%-include('../partials/footer.html')%>
+
+</body>
+
+</html>
+        

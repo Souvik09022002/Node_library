@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile</title>
+    <!-- Include the header partial -->
+    <%-include('../partials/header.html')%>
+    <!-- Link to admin CSS stylesheet -->
+    <link rel="stylesheet" href="/../../css/admin.css">
+</head>
+
+<body>
+
+    <!-- Include the navbar partial -->
+    <%-include('partials/navbar.html')%>
+
+    <!-- Container for the main content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Include the sidebar partial -->
+            <%-include('partials/sidebar.html')%>
+
+            <!-- Main content area -->
+            <div class="col-md-10 content">
+                <div class="row">
+                    <div class="col-md-6 profile-content">
+                        <!-- Header with title -->
+                        <h1 class="display-4 mb-4">Your Profile</h1>
+
+                        <!-- Profile information -->
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Name:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" readonly value="<%=res.name%>">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Email:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" readonly value="<%=res.email%>">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Phone:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" readonly value="<%=res.phone%>">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Address:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" readonly value="<%=res.address%>">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Gender:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" readonly value="<%=res.gender%>">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!-- Links for editing profile and changing password -->
+                        <div class="mb-4">
+                            <a href="/admin/profile/edit" class="btn btn-primary mr-3">Edit Profile</a>
+                            <a href="/admin/changepass" class="btn btn-success mr-3">Change Password</a>
+                            <a href="#" class="btn btn-danger" onclick="history.go(-1)">No, go back!</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 profile-content">
+                        <!-- Profile picture section -->
+                        <img class="profile-pic img-fluid rounded-circle mb-4" src="../../images/profile-pic.jpg" alt="Profile Picture">
+                        <hr>
+                        <a href="#" class="btn btn-info">Change Profile Picture</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the footer partial -->
+    <%-include('../partials/footer.html')%>
+
+</body>
+
+</html>

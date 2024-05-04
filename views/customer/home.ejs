@@ -1,0 +1,62 @@
+<%-include('../partials/header.html')%>
+    <link rel="stylesheet" href="/../../css/customer.css">
+    <title>Customer Home</title>
+    </head>
+
+    <body>
+
+        <%-include('partials/navbar.html')%>
+        <div class="container-fluid">
+            <div class="row">
+                <%-include('partials/sidebar.html')%>
+                <div class="col-md-9 mx-5 content p-2 border">
+                   <div class="bg-info text-light my-3 rounded p-3" style="height: 140px ;">
+                    <p class="display-2">Home|User</p>
+                   </div>
+                    <div class="alert alert-primary" role="alert">
+                        Total books borrowed: <span style="float: right;"><%=tbbbc%></span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Books borrowed in last 7 days: <span style="float: right;">7</span>
+                    </div>
+                    <div class="alert alert-primary" role="alert">
+                        Books borrowed in last 30 days: <span style="float: right;">7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%-include('../partials/footer.html')%>
+
+<style>
+   .content {
+        /* Add some padding to the content section */
+        padding: 20px;
+
+        /* Add a transition effect to the content section */
+        transition: all 0.3s ease;
+    }
+
+   .content:hover {
+        /* Add a background color to the content section on hover */
+        background-color: #f5f5f5;
+    }
+
+   .alert {
+        /* Add some padding to the alerts */
+        padding: 10px;
+
+        /* Add a transition effect to the alerts */
+        transition: all 0.3s ease;
+    }
+
+   .alert:hover {
+        /* Add a background color to the alerts on hover */
+        background-color: #e9ecef;
+    }
+
+   .alert span {
+        /* Add some margin to the span elements in the alert */
+        margin-right: 10px;
+    }
+</style>
