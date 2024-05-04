@@ -63,9 +63,11 @@ stucture:
    
 # 2nd step:
 1way:
-*make a folder
+*make a New folder
 *open terminal of it and type this.
 >>>>git clone https://github.com/Souvik09022002/Node_library.git
+>>>>npm i
+>>>>npm start
 
 
 2nd way:
@@ -73,6 +75,7 @@ download zip and extract it
 and than flow this steps
 >>>>>   npm init -y,
 >>>>>   npm install
+>>>>>   npm start
 
 # 3rd step:
     create a account
