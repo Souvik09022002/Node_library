@@ -66,15 +66,14 @@ stucture:
 *make a folder
 *open terminal of it and type this.
 >>>>git clone https://github.com/Souvik09022002/Node_library.git
->>>>cd <folder name>
->>>>npm start
+
 
 2nd way:
 download zip and extract it 
 and than flow this steps
->>>>>   npm init -y
+>>>>>   npm init -y,
 >>>>>   npm install
->>>>>   npm install async-validator-2 body-parser ejs express express-session morgan mysql nodemon
+
 # 3rd step:
     create a account
     singup
