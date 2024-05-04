@@ -85,87 +85,87 @@ Users can create new accounts and log in via email and password. Once logged in,
    - Open the SQL tab in phpMyAdmin.
    - Copy and paste the following SQL script into the SQL tab:
 
-```sql
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-CREATE TABLE `books` (
-  `book_id` int(100) NOT NULL,
-  `user_id` int(100) DEFAULT NULL,
-  `genre` varchar(300) NOT NULL,
-  `title` varchar(300) NOT NULL,
-  `author` varchar(300) NOT NULL,
-  `publisher` varchar(300) NOT NULL,
-  `edition` int(100) NOT NULL,
-  `isbn` varchar(100) NOT NULL,
-  `pages` int(100) NOT NULL,
-  `date_issued` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
--- Insert sample data into the books table here...
-
-CREATE TABLE `books_request` (
-  `request_id` int(10) NOT NULL,
-  `user_id` int(10) NOT NULL,
-  `genre` varchar(300) NOT NULL,
-  `title` varchar(300) NOT NULL,
-  `author` varchar(300) NOT NULL,
-  `edition` int(10) NOT NULL,
-  `isbn` varchar(100) NOT NULL,
-  `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
--- Insert sample data into the books_request table here...
-
-CREATE TABLE `issue_date` (
-  `issue_id` int(10) NOT NULL,
-  `book_id` int(10) NOT NULL,
-  `user_id` int(10) NOT NULL,
-  `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
--- Insert sample data into the issue_date table here...
-
-CREATE TABLE `users` (
-  `user_id` int(100) NOT NULL,
-  `name` varchar(300) NOT NULL,
-  `phone` varchar(11) NOT NULL,
-  `email` varchar(300) NOT NULL,
-  `is_admin` tinyint(1) NOT NULL,
-  `password` varchar(300) NOT NULL,
-  `address` varchar(300) NOT NULL,
-  `gender` varchar(300) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
--- Insert sample data into the users table here...
-
-ALTER TABLE `books`
-  ADD PRIMARY KEY (`book_id`),
-  ADD KEY `user_id` (`user_id`);
-
-ALTER TABLE `books_request`
-  ADD PRIMARY KEY (`request_id`);
-
-ALTER TABLE `issue_date`
-  ADD PRIMARY KEY (`issue_id`);
-
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`user_id`),
-  ADD UNIQUE KEY `email` (`email`);
-
-ALTER TABLE `books`
-  MODIFY `book_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
-ALTER TABLE `books_request`
-  MODIFY `request_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
-ALTER TABLE `issue_date`
-  MODIFY `issue_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
-
-ALTER TABLE `users`
-  MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-COMMIT;
+    ```sql
+         SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+         START TRANSACTION;
+         SET time_zone = "+00:00";
+         
+         CREATE TABLE `books` (
+           `book_id` int(100) NOT NULL,
+           `user_id` int(100) DEFAULT NULL,
+           `genre` varchar(300) NOT NULL,
+           `title` varchar(300) NOT NULL,
+           `author` varchar(300) NOT NULL,
+           `publisher` varchar(300) NOT NULL,
+           `edition` int(100) NOT NULL,
+           `isbn` varchar(100) NOT NULL,
+           `pages` int(100) NOT NULL,
+           `date_issued` date DEFAULT NULL
+         ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+         
+         -- Insert sample data into the books table here...
+         
+         CREATE TABLE `books_request` (
+           `request_id` int(10) NOT NULL,
+           `user_id` int(10) NOT NULL,
+           `genre` varchar(300) NOT NULL,
+           `title` varchar(300) NOT NULL,
+           `author` varchar(300) NOT NULL,
+           `edition` int(10) NOT NULL,
+           `isbn` varchar(100) NOT NULL,
+           `date` date NOT NULL
+         ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+         
+         -- Insert sample data into the books_request table here...
+         
+         CREATE TABLE `issue_date` (
+           `issue_id` int(10) NOT NULL,
+           `book_id` int(10) NOT NULL,
+           `user_id` int(10) NOT NULL,
+           `date` date NOT NULL
+         ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+         
+         -- Insert sample data into the issue_date table here...
+         
+         CREATE TABLE `users` (
+           `user_id` int(100) NOT NULL,
+           `name` varchar(300) NOT NULL,
+           `phone` varchar(11) NOT NULL,
+           `email` varchar(300) NOT NULL,
+           `is_admin` tinyint(1) NOT NULL,
+           `password` varchar(300) NOT NULL,
+           `address` varchar(300) NOT NULL,
+           `gender` varchar(300) NOT NULL
+         ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+         
+         -- Insert sample data into the users table here...
+         
+         ALTER TABLE `books`
+           ADD PRIMARY KEY (`book_id`),
+           ADD KEY `user_id` (`user_id`);
+         
+         ALTER TABLE `books_request`
+           ADD PRIMARY KEY (`request_id`);
+         
+         ALTER TABLE `issue_date`
+           ADD PRIMARY KEY (`issue_id`);
+         
+         ALTER TABLE `users`
+           ADD PRIMARY KEY (`user_id`),
+           ADD UNIQUE KEY `email` (`email`);
+         
+         ALTER TABLE `books`
+           MODIFY `book_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+         
+         ALTER TABLE `books_request`
+           MODIFY `request_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+         
+         ALTER TABLE `issue_date`
+           MODIFY `issue_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+         
+         ALTER TABLE `users`
+           MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+         COMMIT;
 
 
 ### Step 2:
