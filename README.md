@@ -87,6 +87,7 @@ Users can create new accounts and log in via email and password. Once logged in,
 2. Open terminal in the folder and execute:
    ```sh
    git clone https://github.com/Souvik09022002/Node_library.git
+   cd .\Node_library\
    npm install
    npm start
 #### Option 2:
