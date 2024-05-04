@@ -81,7 +81,7 @@ Users can create new accounts and log in via email and password. Once logged in,
 
 ### Step 2:
 
-#### Option 1:
+#### Option 1(Recomended):
 
 1. Create a new folder.
 2. Open terminal in the folder and execute:
